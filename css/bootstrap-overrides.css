@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+	.container {
+    	width: 960px;
+	}
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
