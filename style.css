@@ -12,21 +12,12 @@ body {
 	margin-bottom: 60px;
 }
 
-#content .row {
-background-color: #7297BA;
-}
-
 header.container {
 	height:230px;
   background-color:#4E698C;
   padding: 0px;
 }
 
-
-#nav .container {
-	/*margin-bottom: -20px;*/
-  /*background-color: #d8d5d5; */
-}
 
 /* center navbar */
 .navbar-nav {
@@ -63,14 +54,9 @@ div.col-sm-3.col-md-2.sidebar {
 
 
 
-footer .container {
-	border-top: 1px solid #d8d5d5;
-}
-
 .footer
 {
     border-top: none;
-    background-color: #4E698C;
 }
 .footer .container
 {
@@ -79,3 +65,43 @@ footer .container {
 }
 
 
+nav {
+  font: bold 12px Verdana;
+  background: #CC9933; /* #414141;*/
+  width: 100%;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*Top level list items*/
+nav ul li{
+  position: relative;
+  display: inline;
+  float: left;
+  z-index: 10;
+}
+
+/*Top level menu link items style*/
+nav ul li a{
+  display: block;
+  background: #CC9933; /*#414141; background of tabs (default state)*/
+  color: #fff;
+  padding: 8px 10px;
+  border-right: 1px solid #778;
+  color: #2d2b2b;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+nav ul li a:link, nav ul li a:visited{
+color: white;
+}
+
+nav ul li a:hover{
+background: #FFCC33; /* black; tab link background during hover state*/
+color: white;
+}

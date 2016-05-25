@@ -31,5 +31,5 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		</div>
 	</nav>
-	<!-- <div id="rs_breadcrumbs"></div> !-->
+	<div id="rs_breadcrumbs"></div>
 	
