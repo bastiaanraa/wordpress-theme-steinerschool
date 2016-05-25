@@ -16,9 +16,6 @@
 					<?php edit_post_link(); ?>
 					<?php wp_link_pages(); ?>
 				</div><!--. entry-->
-				<footer class="post-footer">
-					<div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
-				</footer><!--.post-footer-->
 			</div><!-- .post-->
 		<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
 			<nav class="navigation index">
