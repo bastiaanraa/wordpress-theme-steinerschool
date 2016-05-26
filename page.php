@@ -13,36 +13,55 @@
 
 get_header(); ?>
 
-<div class="content">
 
-<?php
-	if ( is_front_page() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
 
+<div id="content" class='container'>
+	<div class="row">
+		<div class="col-sm-3 col-md-2 sidebar">
+			<ul class="nav nav-sidebar" id="subnav">
+			  <?php
+				  if($post->post_parent)
+				  	$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+				  else
+				  	$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+				  if ($children) { ?>
+					  <ul>
+					  <?php echo $children; ?>
+					  </ul>
+				  <?php } ?>
+			</ul>
+		</div>
+		<div class="col-sm-9 col-md-10 main">
+			<p>PAGE</p>
 			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
-
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
+				if ( is_front_page() ) {
+					// Include the featured content template.
+					get_template_part( 'featured-content' );
+				}
 			?>
+			<div id="primary" class="content-area">
+				<div id="content" class="site-content" role="main">
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
+					<?php
+						// Start the Loop.
+						while ( have_posts() ) : the_post();
+
+							// Include the page content template.
+							get_template_part( 'content', 'page' );
+
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) {
+								comments_template();
+							}
+						endwhile;
+					?>
+
+				</div><!-- #content -->
+			</div><!-- #primary -->		
+		</div>
+	</div> <!-- .row -->
 </div><!-- #content -->
 
 <?php
-get_sidebar();
+
 get_footer();

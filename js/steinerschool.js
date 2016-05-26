@@ -1,19 +1,24 @@
 $(document).ready(function() {
+  console.log($('header').height() - $('header div.fixed').height());
 	$('#nav').affix({
       offset: {
-        top: $('header').height()
+        top: $('header').height() - $('header div.fixed').height()- $('header div.fixed').height()
       }
 	});
 	$('#subnav').affix({
       offset: {
-        top: $('header').height()
+        top: $('header').height() - $('header div.fixed').height() - $('header div.fixed').height()
       }
 	});
+  $('header div.fixed').affix({
+      offset: {
+        top: 0
+      }
+  });
 });
 
 // function to set the height on fly
  function autoHeight() {
-  console.log($('nav').height());
    $('#content').css('min-height', 0);
    $('#content').css('min-height', (
      $(document).height() 

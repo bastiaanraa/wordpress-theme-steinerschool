@@ -2,14 +2,10 @@
 
 <div id="content" class="container"> 
 	<div class="row">
+	<p>INDEX</p>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="post-header">
-					<div class="date"><?php the_time( 'M j y' ); ?></div>
-					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					<div class="author"><?php the_author(); ?></div>
-				</div><!--.post-header-->
 				<div class="entry clear">
 					<?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
 					<?php the_content(); ?>
@@ -27,5 +23,4 @@
 	</div>
 </div><!--#content-->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -24,7 +24,12 @@ function custom_theme_setup() {
 add_action( 'after_setup_theme', 'custom_theme_setup' );
 
 function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
+	register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'side-menu' => __( 'Side Menu' )
+     )
+   );
 }
 add_action( 'init', 'register_my_menu' );
 

@@ -18,18 +18,18 @@
 
 <body>
 	<header class="container masthead" role="banner">
-		<div class="row">
+		<div class='fixed'>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/naamschool.gif" alt="" border="0" />
 		</div>
-		<div class="row">
+		<div id="bigheaderimage" class="hidden-xs hidden-sm">
 			<a class="nohover" href="http://www.steinerschoolgent.be/"><img src="<?php header_image(); ?>" alt="header image" border="0" /></a>
 		</div>
 	</header>
 	<div id="wrap" class='container'>
 	<nav class="navbar navbar-static-top" id="nav" role="navigation">
 		<div class="container">
-			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme location' => 'header-menu', 'depth' => 1 ) ); ?>
 		</div>
 	</nav>
-	<div id="rs_breadcrumbs"></div>
+	<!-- <div id="rs_breadcrumbs"></div> -->
 	
