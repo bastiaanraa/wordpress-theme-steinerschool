@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log($('header').height() - $('header div.fixed').height());
 	$('#nav').affix({
       offset: {
         top: $('header').height() - $('header div.fixed').height()
