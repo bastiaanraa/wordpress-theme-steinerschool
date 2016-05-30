@@ -32,7 +32,7 @@ header div.fixed.affix {
 /* tegen het verspingen van de pagina */
 /* http://stackoverflow.com/questions/15176990/twitter-bootstrap-affixed-navbar-div-below-jumps-up/15177077#15177077 */
 .affix + .container {
-  padding-top: 100px;
+  padding-top: 30px;
 }
 .affix + #bigheaderimage {
   padding-top: 30px;
