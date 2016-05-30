@@ -32,13 +32,6 @@ get_header(); ?>
 			</ul>
 		</div>
 		<div class="col-sm-9 col-md-10 main">
-			<p>PAGE</p>
-			<?php
-				if ( is_front_page() ) {
-					// Include the featured content template.
-					get_template_part( 'featured-content' );
-				}
-			?>
 			<div id="primary" class="content-area">
 				<div id="content" class="site-content" role="main">
 
