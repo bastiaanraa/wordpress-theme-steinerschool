@@ -1,1 +1,1 @@
-# wordpress-theme-1
+# wordpress-theme-steinerschool
