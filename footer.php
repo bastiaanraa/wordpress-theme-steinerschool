@@ -43,5 +43,5 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/steinerschool.js"></script>
-
+<?php wp_footer(); ?>
 </body></html>
