@@ -1,3 +1,11 @@
+body {
+  background-color: #0F1D30;
+}
+
+h1, h2, h3, nav a {
+  font-family: 'Exo 2', sans-serif;
+}
+
 header.container {
 	/*height:230px;*/
   background-color:#4E698C;
@@ -9,7 +17,14 @@ header div.fixed {
 }
 header div.fixed.affix {
   z-index: 10;
-  width: 100%;
+  width: 960px;
+}
+
+header .sitetitle {
+  color: #fff;
+  font-size: 16pt;
+  padding-left: 5px;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* center navbar */
@@ -31,8 +46,8 @@ header div.fixed.affix {
 
 /* tegen het verspingen van de pagina */
 /* http://stackoverflow.com/questions/15176990/twitter-bootstrap-affixed-navbar-div-below-jumps-up/15177077#15177077 */
-.affix + .container {
-  padding-top: 30px;
+.affix + #content {
+  padding-top: 31px;
 }
 .affix + #bigheaderimage {
   padding-top: 30px;
@@ -53,10 +68,17 @@ div.col-sm-3.col-md-2.sidebar {
   max-width: 960px;
 }
 
+#content .row {
+  margin: 10px;
+}
+
+.navbar {
+  border-bottom: 1px solid white;
+}
 nav {
   margin-left: -15px;
   margin-right: -15px;
-  font: bold 12px Verdana;
+  
   background: #CC9933; /* #414141;*/
 }
 
@@ -115,4 +137,14 @@ nav ul li a:hover{
 {
   border-top: 5px solid #CC9933;
   background-color: #7297BA;
+}
+
+h3 a {
+  /*color: #0F1D30;*/
+}
+
+.textbox {
+  background-color: rgb(209, 219, 230); 
+  border-radius: 0px 20px 0px 20px;
+  margin-bottom: 20px;
 }

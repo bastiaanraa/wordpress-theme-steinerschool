@@ -11,6 +11,8 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap-overrides.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/steinerschool.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
@@ -18,8 +20,8 @@
 
 <body>
 	<header class="container masthead" role="banner">
-		<div class='fixed'>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/naamschool.gif" alt="" border="0" />
+		<div class='fixed sitetitle'>
+			<?php bloginfo( 'name' ); ?>
 		</div>
 		<div id="bigheaderimage" class="hidden-xs hidden-sm">
 			<a class="nohover" href="http://www.steinerschoolgent.be/"><img src="<?php header_image(); ?>" alt="header image" border="0" /></a>

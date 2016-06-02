@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="content" class="container"> 
+<div id="content"> 
 	<div class="row">
 	<p>INDEX</p>
 	<?php if ( have_posts() ) : ?>
