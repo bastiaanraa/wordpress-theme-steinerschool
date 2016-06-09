@@ -39,11 +39,7 @@
 				<?php the_content(); ?>
 				<?php endwhile; ?>
 			</div>
-			<div> <!-- link to Facebook -->
-				<?php $recent = new WP_Query("page_id=54"); while($recent->have_posts()) : $recent->the_post();?>
-				<?php the_content(); ?>
-				<?php endwhile; ?>
-			</div>
+			
 		</div>
 		<div class="col-md-6">
 			<div>
@@ -56,15 +52,19 @@
 				<div class="textbox">
 					<p>
 						Vrije Rudolf Steinerschool Vlaanderen (basisonderwijs)<br>
-Middelbare Rudolf Steinerschool Vlaanderen<br>
-Kasteellaan 54<br>
-9000 Gent<br>
-Telefoon : 09 235 28 00<br>
-info@steinerschoolgent.be
+						Middelbare Rudolf Steinerschool Vlaanderen<br>
+						Kasteellaan 54<br>
+						9000 Gent<br>
+						Telefoon : 09 235 28 00<br>
+						info@steinerschoolgent.be
 					</p>
+				</div>
 			</div>
-			
-			
+			<div> <!-- link to Facebook -->
+				<?php $recent = new WP_Query("page_id=54"); while($recent->have_posts()) : $recent->the_post();?>
+				<?php the_content(); ?>
+				<?php endwhile; ?>
+			</div>
 		</div>
 	</div><!--.row-->
 </div><!--#content-->

@@ -8,3 +8,12 @@
 	margin-bottom: 0px;
 	min-height: 34px;
 }
+
+.navbar-toggle {
+	background-color: rgb(209, 219, 230); 
+	float: left;
+	margin-left: 15px;
+}
+.navbar-toggle .icon-bar {
+	background-color: #888;
+}
