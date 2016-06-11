@@ -146,6 +146,28 @@ nav ul li a:hover{
   border-top: 5px solid #CC9933;
   background-color: #7297BA;
 }
+.menu-footer-menu-container ul li {
+  display: inline;
+  float:left;
+  margin-right: 30px;
+}
+
+.menu-footer-menu-container ul.menu li a {
+  font-size: 120%;
+  font-weight: bold;
+  color: #273443;
+}
+.menu-footer-menu-container ul.sub-menu li {
+  display: list-item;
+  list-style-type: disc;
+}
+.menu-footer-menu-container ul.sub-menu li a {
+    color: white;
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 14pt;
+    text-decoration: none;
+}
 
 h3 a {
   /*color: #0F1D30;*/

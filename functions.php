@@ -26,8 +26,9 @@ add_action( 'after_setup_theme', 'custom_theme_setup' );
 function register_my_menu() {
 	register_nav_menus(
     array(
-      'header-menu' => __( 'Header Menu' ),
-      'side-menu' => __( 'Side Menu' )
+      'header-menu' => 'Header Menu',
+      //'side-menu' => 'Side Menu',
+      'footer-menu' => 'Footer Menu'
      )
    );
 }
