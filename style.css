@@ -146,7 +146,7 @@ nav ul li a:hover{
   border-top: 5px solid #CC9933;
   background-color: #7297BA;
 }
-.menu-footer-menu-container ul li {
+.menu-footer-menu-container ul.menu li {
   display: inline;
   float:left;
   margin-right: 30px;
@@ -159,6 +159,7 @@ nav ul li a:hover{
 }
 .menu-footer-menu-container ul.sub-menu li {
   display: list-item;
+  float: none;
   list-style-type: disc;
 }
 .menu-footer-menu-container ul.sub-menu li a {
