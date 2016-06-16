@@ -157,6 +157,9 @@ nav ul li a:hover{
   font-weight: bold;
   color: #273443;
 }
+.menu-footer-menu-container ul.sub-menu {
+  padding-left: 20px;
+}
 .menu-footer-menu-container ul.sub-menu li {
   display: list-item;
   float: none;
