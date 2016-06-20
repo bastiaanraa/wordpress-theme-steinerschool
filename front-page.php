@@ -42,11 +42,7 @@
 			
 		</div>
 		<div class="col-md-6">
-			<div>
-				<?php $recent = new WP_Query("page_id=41"); while($recent->have_posts()) : $recent->the_post();?>
-				<?php the_content(); ?>
-				<?php endwhile; ?>
-			</div>
+			
 			<div>
 				<h2>Contact</h2>
 				<div class="textbox">
@@ -61,7 +57,7 @@
 				</div>
 			</div>
 			<div> <!-- link to Facebook -->
-				<?php $recent = new WP_Query("page_id=54"); while($recent->have_posts()) : $recent->the_post();?>
+				<?php $recent = new WP_Query("page_id=182"); while($recent->have_posts()) : $recent->the_post();?>
 				<?php the_content(); ?>
 				<?php endwhile; ?>
 			</div>
