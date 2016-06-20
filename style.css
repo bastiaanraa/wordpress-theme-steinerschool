@@ -128,6 +128,10 @@ nav ul li a:hover{
 .nav.nav-sidebar {
   margin-top: 1em;
 }
+.nav.nav-sidebar ul {
+  padding-left: 10px;
+  list-style-type: disc;
+}
 #rs_breadcrumbs {
   margin-bottom: 15px;
   margin-left: -15px;
