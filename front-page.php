@@ -19,16 +19,10 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6">
-			<div>
-				<h2>Ik wil informatie over</h2>
-					<ul class="textbox">
-						<li>Inschrijvingen</li>
-						 <li>De peuter- en kleuterschool</li>
-						<li>De lagere school (1ste - 6de klas)</li>
-						<li>De middelbare school (1ste graad: 7de en 8ste klas)</li>
-						<li>De middelbare school (2de en 3de graad: 9de - 12de klas)</li>
-						<li>Kinderopvang</li>
-					</ul>
+			<div> <!-- Ik wil -->
+				<?php $recent = new WP_Query("pagename=frontpage-ik-wil"); while($recent->have_posts()) : $recent->the_post();?>
+				<?php the_content(); ?>
+				<?php endwhile; ?>
 			</div>
 			<div>
 				<h2>Activiteiten</h2>
@@ -43,18 +37,10 @@
 		</div>
 		<div class="col-md-6">
 			
-			<div>
-				<h2>Contact</h2>
-				<div class="textbox">
-					<p>
-						Vrije Rudolf Steinerschool Vlaanderen (basisonderwijs)<br>
-						Middelbare Rudolf Steinerschool Vlaanderen<br>
-						Kasteellaan 54<br>
-						9000 Gent<br>
-						Telefoon : 09 235 28 00<br>
-						info@steinerschoolgent.be
-					</p>
-				</div>
+			<div> <!-- Contact -->
+				<?php $recent = new WP_Query("pagename=frontpage-contact"); while($recent->have_posts()) : $recent->the_post();?>
+				<?php the_content(); ?>
+				<?php endwhile; ?>
 			</div>
 			<div> <!-- link to Facebook -->
 				<?php $recent = new WP_Query("page_id=182"); while($recent->have_posts()) : $recent->the_post();?>
