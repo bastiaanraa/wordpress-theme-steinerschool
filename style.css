@@ -169,6 +169,7 @@ nav ul li a:hover{
   display: list-item;
   float: none;
   list-style-type: disc;
+  color: #4E698C;
 }
 .menu-footer-menu-container ul.sub-menu li a {
     color: white;
