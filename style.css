@@ -188,6 +188,13 @@ h3 a {
   margin-bottom: 20px;
   padding: 5px 15px;
 }
+.textbox a:link {
+  color: #23527c;
+}
+.textbox a:hover {
+  background: inherit;
+  text-decoration: underline;
+}
 
 ul.textbox {
   padding-left: 25px;
