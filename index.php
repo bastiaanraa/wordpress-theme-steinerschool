@@ -2,7 +2,6 @@
 
 <div id="content"> 
 	<div class="row">
-	<p>INDEX</p>
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
